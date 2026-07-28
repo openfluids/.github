@@ -47,8 +47,3 @@ They are built to compose: `openmodalpy` runs its transforms through `fftkit`, s
 a backend installed once is available to everything above it.
 
 More tools will appear here as they are released.
-
-## License
-
-Licences are per-repository. See the `LICENSE` and `NOTICE` files in each
-repository for the authoritative terms.
