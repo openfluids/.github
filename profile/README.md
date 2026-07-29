@@ -1,4 +1,4 @@
-![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v2.jpg)
+![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
 
 `openfluids` is a home for small, focused, open packages built around dynamical
 systems, chaos, and the spectral analysis of spatiotemporal data. Each tool does
