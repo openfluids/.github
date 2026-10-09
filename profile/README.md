@@ -52,3 +52,6 @@ comes back — but they stay separate installs on purpose, since a machine that
 only submits jobs should not pay for VTK.
 
 More tools will appear here as they are released.
+
+All openfluids software is provided "as is", without warranty of any kind. Each
+repository's LICENSE and the Disclaimer section of its README set the terms of use.
