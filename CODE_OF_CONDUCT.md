@@ -46,8 +46,8 @@ behalf of the project.
 
 openfluids is a small project, so this part is short.
 
-Email <rasfrantz@gmail.com>. Your report will be kept confidential, and you will
-get a reply.
+Report it privately: on the repository where it happened, open **Security →
+Report a vulnerability** and start the title with "Conduct". Only you and the maintainer see that thread. Your report will be kept confidential, and you will get a reply.
 
 In most cases a private conversation settles it, and that is the outcome I aim
 for. Where it does not, I may edit or remove a comment and say why. I would
