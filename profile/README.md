@@ -1,57 +1,63 @@
 ![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
 
-`openfluids` is a home for small, focused, open packages built around dynamical
-systems, chaos, and the spectral analysis of spatiotemporal data. Each tool does
-one thing, and is meant to be read, reused, and combined.
+# openfluids
 
-## Projects
+**An open, collaborative workshop for fluid flows, with ultra-modern code.**
 
-**[`fftkit`](https://github.com/openfluids/fftkit)** — spectra of physical
-signals, and one FFT API over eight backends (SciPy, NumPy, Intel MKL, CuPy,
-PyTorch, TensorFlow, pyFFTW, Accelerate). `spectrum()` handles the resampling,
-detrending and windowing a non-uniformly sampled record needs, and reports what
-it did; below that, swapping `backend=` leaves your call sites alone.
+We build small, focused tools for the daily work of flow studies: running
+simulations on clusters, turning snapshots into frames, and pulling structure
+out of the data. Each tool does one job, is tested against reference results,
+and is meant to be read, reused and combined.
 
-**[`openmodalpy`](https://github.com/openfluids/openmodalpy)** — nine modal
-decomposition methods for spatiotemporal data behind one API: POD, mPOD,
-PSD-POD, SPOD, ST-POD, DMD/HODMD and BSMD, driven by a config file or a CLI.
-Pure NumPy/SciPy, no external solvers.
+## Stability
 
-**[`dynachaos`](https://github.com/openfluids/dynachaos)** — dynamical-systems
-analysis of measured or simulated time signals: maps and coupled-map lattices,
-Lyapunov exponents, recurrence quantification, entropy diagnostics, correlation
-dimension and multifractal spectra, with Rust-accelerated kernels where those
-have parity tests.
+**[`linstabpy`](https://github.com/openfluids/linstabpy)**: sparse linear
+stability and resolvent analysis of 2D compressible flows.
 
-**[`dsgbr`](https://github.com/openfluids/dsgbr)** — spectral peak detection for
-noisy power spectra that slope over several decades, using a Savitzky–Golay
-search scored against a rolling-median baseline rather than a fixed threshold.
+**[`nekStab`](https://github.com/nekStab/nekStab)**: stability, bifurcation and
+sensitivity analysis for Nek5000.
 
-**[`chaos-atlas`](https://github.com/openfluids/chaos-atlas)** — an interactive
-explorer for chaotic dynamical systems: strange attractors, bifurcations,
-Lyapunov exponents, fractals and coupled-map-lattice patterns. Runs in the
-browser; the map kernels also ship as a Python package.
+## Optimisation
 
-**[`quadros`](https://github.com/openfluids/quadros)** — turns simulation
-snapshots into checked frame sets and videos. Runs locally, over SSH, inside a
-container or from a scheduler job without copying scripts into case directories,
-and writes a manifest of what it rendered so dense snapshots can be deleted with
-something to check against. Nek5000 has dedicated support; other formats go
+**[`organa`](https://github.com/openfluids/organa)**: adjoint topology
+optimisation for conjugate heat transfer, in parallel with MPI.
+
+## Analysis
+
+**[`openmodalpy`](https://github.com/openfluids/openmodalpy)**: nine modal
+decompositions behind one API: POD, mPOD, PSD-POD, SPOD, ST-POD, DMD/HODMD and
+BSMD, from a config file or a CLI. Pure NumPy and SciPy.
+
+**[`fftkit`](https://github.com/openfluids/fftkit)**: spectra of physical
+signals, and one FFT API over eight backends. `spectrum()` handles resampling,
+detrending and windowing, and reports what it did; `backend=` swaps the engine
+without touching your code.
+
+**[`dsgbr`](https://github.com/openfluids/dsgbr)**: peak detection for noisy
+power spectra that slope over decades, scored against a rolling-median baseline
+instead of a fixed threshold.
+
+## Runs and frames
+
+**[`hpckit`](https://github.com/openfluids/hpckit)**: drives Slurm work from a
+local checkout: one environment per commit, run packets, submission and polling,
+receipts and artifact sync.
+
+**[`quadros`](https://github.com/openfluids/quadros)**: turns simulation
+snapshots into checked frames and videos, locally, over SSH or in a scheduler
+job, with a manifest of what it rendered. Nek5000 built in; other formats
 through PyVista.
 
-**[`hpckit`](https://github.com/openfluids/hpckit)** — drives Slurm work from a
-local checkout: remote tool checkouts, an immutable virtualenv per commit, run
-packets, submission and polling, receipts and artifact sync. The tools it runs
-are declared in your own config file — it ships none of them, and needs nothing
-but a YAML parser itself.
+## How they fit
 
-They are built to compose: `openmodalpy` runs its transforms through `fftkit`, so
-a backend installed once is available to everything above it. `hpckit` and
-`quadros` pair the same way — `hpckit` submits the run, `quadros` renders what
-comes back — but they stay separate installs on purpose, since a machine that
-only submits jobs should not pay for VTK.
+`openmodalpy` runs its transforms through `fftkit`, so a backend installed once
+serves both. `hpckit` submits the run and `quadros` renders what comes back;
+they stay separate installs, so a machine that only submits jobs never needs VTK.
 
-More tools will appear here as they are released.
+## On the bench
+
+More is taking shape in the workshop: new solvers, GPU kernels and tools for
+studying how flows behave. They will open as they mature.
 
 All openfluids software is provided "as is", without warranty of any kind. Each
-repository's LICENSE and the Disclaimer section of its README set the terms of use.
+repository's LICENSE sets the terms of use.
