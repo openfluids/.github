@@ -9,6 +9,12 @@ simulations on clusters, turning snapshots into frames, and pulling structure
 out of the data. Each tool does one job, is tested against reference results,
 and is meant to be read, reused and combined.
 
+## Solvers
+
+**[`dolfinx-rans`](https://github.com/openfluids/dolfinx-rans)**: RANS k-omega and
+k-omega SST turbulence solver for incompressible flow in DOLFINx, validated on
+turbulent channel flow.
+
 ## Stability
 
 **[`linstabpy`](https://github.com/openfluids/linstabpy)**: sparse linear
@@ -36,6 +42,14 @@ without touching your code.
 **[`dsgbr`](https://github.com/openfluids/dsgbr)**: peak detection for noisy
 power spectra that slope over decades, scored against a rolling-median baseline
 instead of a fixed threshold.
+
+**[`dynachaos`](https://github.com/openfluids/dynachaos)**: dynamical-systems
+analysis of time signals: Lyapunov exponents, recurrence, entropy and
+coupled-map lattices, with Rust-accelerated kernels.
+
+**[`chaos-atlas`](https://openfluids.github.io/chaos-atlas/)**: an interactive
+explorer for chaotic systems: strange attractors, bifurcations, fractals and
+coupled-map-lattice patterns, in the browser.
 
 ## Runs and frames
 
