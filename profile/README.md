@@ -1,11 +1,8 @@
 ![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
 
-**An open state-of-the-art, collaborative workshop for fluid flows, with ultra-modern code.**
+**An open workshop for fluid flows: state-of-the-art methods, ultra-modern code, every result checked.**
 
-We build performant numerical tools for the daily work of flow studies: running 
-simulations on clusters, turning snapshots into frames, and pulling structure
-out of the data. Each tool does one job, is tested against reference results,
-and is meant to be read, reused and combined.
+We build numerical tools for the daily work of flow studies: solving flows, analysing their stability and structure, and running the work on clusters. Each tool does one job and is checked against reference results. Each is made to be read, reused and combined, by people and by their agents.
 
 ## Stability
 
