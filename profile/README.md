@@ -18,9 +18,9 @@ sensitivity analysis for Nek5000.
 decompositions behind one API: POD, mPOD, PSD-POD, SPOD, ST-POD, DMD/HODMD and
 BSMD, from a config file or a CLI. Pure NumPy and SciPy.
 
-**[`dynachaos`](https://openfluids.github.io/dynachaos/)**: dynamical-systems
+**[`dynachaos`](https://github.com/openfluids/dynachaos/)**: dynamical-systems
 analysis of time signals: Lyapunov exponents, recurrence, entropy and
-coupled-map lattices, with Rust-accelerated kernels.
+coupled-map lattices, with Rust-accelerated kernels.  ([site](https://openfluids.github.io/dynachaos/))
 
 **[`fftkit`](https://github.com/openfluids/fftkit)**: spectra of physical
 signals, and one FFT API over eight backends. `spectrum()` handles resampling,
@@ -31,9 +31,9 @@ without touching your code.
 power spectra that slope over decades, scored against a rolling-median baseline
 instead of a fixed threshold.
 
-**[`chaos-atlas`](https://openfluids.github.io/chaos-atlas/)**: an interactive
+**[`chaos-atlas`](https://github.com/openfluids/chaos-atlas/)**: an interactive
 explorer for chaotic systems: strange attractors, bifurcations, fractals and
-coupled-map-lattice patterns, in the browser.
+coupled-map-lattice patterns, in the browser. ([site](https://openfluids.github.io/chaos-atlas/))
 
 ## Optimisation
 
