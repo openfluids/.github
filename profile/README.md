@@ -7,7 +7,7 @@ We build numerical tools for the daily work of flow studies: solving flows, anal
 ## Stability
 
 **[`linstabpy`](https://github.com/openfluids/linstabpy)**: sparse linear
-stability and resolvent analysis of 2D compressible flows.
+stability and resolvent analysis of 2D compressible flows. ([documentation](https://linstabpy.vercel.app/))
 
 **[`nekStab`](https://github.com/nekStab/nekStab)**: stability, bifurcation and
 sensitivity analysis for Nek5000.
@@ -16,7 +16,7 @@ sensitivity analysis for Nek5000.
 
 **[`openmodalpy`](https://github.com/openfluids/openmodalpy)**: nine modal
 decompositions behind one API: POD, mPOD, PSD-POD, SPOD, ST-POD, DMD/HODMD and
-BSMD, from a config file or a CLI. Pure NumPy and SciPy.
+BSMD, from a config file or a CLI. Pure NumPy and SciPy. ([pypi](https://pypi.org/project/openmodalpy/))
 
 **[`dynachaos`](https://github.com/openfluids/dynachaos/)**: dynamical-systems
 analysis of time signals: Lyapunov exponents, recurrence, entropy and
