@@ -63,10 +63,10 @@ turbulent channel flow.
 serves both. `hpckit` submits the run and `quadros` renders what comes back;
 they stay separate installs, so a machine that only submits jobs never needs VTK.
 
-## On the bench
+## Under development
 
 More is taking shape in the workshop: new solvers, GPU kernels and tools for
-studying how flows behave. They will open as they mature.
+studying how flows behave. They will public as they mature.
 
 All openfluids software is provided "as is", without warranty of any kind. Each
 repository's LICENSE sets the terms of use.
