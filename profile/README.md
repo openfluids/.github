@@ -9,12 +9,6 @@ simulations on clusters, turning snapshots into frames, and pulling structure
 out of the data. Each tool does one job, is tested against reference results,
 and is meant to be read, reused and combined.
 
-## Solvers
-
-**[`dolfinx-rans`](https://github.com/openfluids/dolfinx-rans)**: RANS k-omega and
-k-omega SST turbulence solver for incompressible flow in DOLFINx, validated on
-turbulent channel flow.
-
 ## Stability
 
 **[`linstabpy`](https://github.com/openfluids/linstabpy)**: sparse linear
@@ -23,16 +17,15 @@ stability and resolvent analysis of 2D compressible flows.
 **[`nekStab`](https://github.com/nekStab/nekStab)**: stability, bifurcation and
 sensitivity analysis for Nek5000.
 
-## Optimisation
-
-**[`organa`](https://github.com/openfluids/organa)**: adjoint topology
-optimisation for conjugate heat transfer, in parallel with MPI.
-
 ## Analysis
 
 **[`openmodalpy`](https://github.com/openfluids/openmodalpy)**: nine modal
 decompositions behind one API: POD, mPOD, PSD-POD, SPOD, ST-POD, DMD/HODMD and
 BSMD, from a config file or a CLI. Pure NumPy and SciPy.
+
+**[`dynachaos`](https://openfluids.github.io/dynachaos/)**: dynamical-systems
+analysis of time signals: Lyapunov exponents, recurrence, entropy and
+coupled-map lattices, with Rust-accelerated kernels.
 
 **[`fftkit`](https://github.com/openfluids/fftkit)**: spectra of physical
 signals, and one FFT API over eight backends. `spectrum()` handles resampling,
@@ -43,13 +36,14 @@ without touching your code.
 power spectra that slope over decades, scored against a rolling-median baseline
 instead of a fixed threshold.
 
-**[`dynachaos`](https://github.com/openfluids/dynachaos)**: dynamical-systems
-analysis of time signals: Lyapunov exponents, recurrence, entropy and
-coupled-map lattices, with Rust-accelerated kernels.
-
 **[`chaos-atlas`](https://openfluids.github.io/chaos-atlas/)**: an interactive
 explorer for chaotic systems: strange attractors, bifurcations, fractals and
 coupled-map-lattice patterns, in the browser.
+
+## Optimisation
+
+**[`organa`](https://github.com/openfluids/organa)**: adjoint topology
+optimisation for conjugate heat transfer, in parallel with MPI.
 
 ## Runs and frames
 
@@ -61,6 +55,12 @@ receipts and artifact sync.
 snapshots into checked frames and videos, locally, over SSH or in a scheduler
 job, with a manifest of what it rendered. Nek5000 built in; other formats
 through PyVista.
+
+## Solvers
+
+**[`dolfinx-rans`](https://github.com/openfluids/dolfinx-rans)**: RANS k-omega and
+k-omega SST turbulence solver for incompressible flow in DOLFINx, validated on
+turbulent channel flow.
 
 ## How they fit
 
