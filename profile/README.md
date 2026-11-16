@@ -1,7 +1,5 @@
 ![openfluids](https://raw.githubusercontent.com/openfluids/.github/main/profile/banner.jpg)
 
-**Open tools for fluid flows: state-of-the-art methods, ultra-modern low-memory code, for humans and agents.**
-
 **Stability**
 
 - [`linstabpy`](https://github.com/openfluids/linstabpy): linear stability and resolvent analysis
