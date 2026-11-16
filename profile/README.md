@@ -1,72 +1,25 @@
-![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
+![openfluids](https://raw.githubusercontent.com/openfluids/.github/main/profile/banner.jpg)
 
-**Open tools for fluid flows: state-of-the-art methods and ultra-modern code, for humans and agents.**
+**Open tools for fluid flows: state-of-the-art methods and ultra-modern, low-memory code, for humans and agents.**
 
-We build numerical tools for the daily work of flow studies: solving flows, analysing their stability and structure, and running the work on clusters. Each tool does one job, is tested against reference results, and is made to be read, reused and combined, by humans and agents alike.
+**Stability**
 
-## Stability
+- [`linstabpy`](https://github.com/openfluids/linstabpy): linear stability and resolvent analysis
+- [`nekStab`](https://github.com/nekStab/nekStab): stability and bifurcation for Nek5000
 
-**[`linstabpy`](https://github.com/openfluids/linstabpy)**: sparse linear
-stability and resolvent analysis of 2D compressible flows. ([documentation](https://linstabpy.vercel.app/))
+**Analysis**
 
-**[`nekStab`](https://github.com/nekStab/nekStab)**: stability, bifurcation and
-sensitivity analysis for Nek5000.
+- [`openmodalpy`](https://github.com/openfluids/openmodalpy): nine modal decompositions, one API
+- [`dynachaos`](https://github.com/openfluids/dynachaos): Lyapunov exponents, recurrence, entropy
+- [`fftkit`](https://github.com/openfluids/fftkit): spectra, one FFT API over eight backends
+- [`dsgbr`](https://github.com/openfluids/dsgbr): peaks in noisy, sloped spectra
+- [`chaos-atlas`](https://github.com/openfluids/chaos-atlas): chaotic systems in the browser
 
-## Analysis
+**Solvers**
 
-**[`openmodalpy`](https://github.com/openfluids/openmodalpy)**: nine modal
-decompositions behind one API: POD, mPOD, PSD-POD, SPOD, ST-POD, DMD/HODMD and
-BSMD, from a config file or a CLI. Pure NumPy and SciPy. ([pypi](https://pypi.org/project/openmodalpy/))
+- [`dolfinx-rans`](https://github.com/openfluids/dolfinx-rans): RANS turbulence in DOLFINx
 
-**[`dynachaos`](https://github.com/openfluids/dynachaos/)**: dynamical-systems
-analysis of time signals: Lyapunov exponents, recurrence, entropy and
-coupled-map lattices, with Rust-accelerated kernels.  ([site](https://openfluids.github.io/dynachaos/))
+**Runs**
 
-**[`fftkit`](https://github.com/openfluids/fftkit)**: spectra of physical
-signals, and one FFT API over eight backends. `spectrum()` handles resampling,
-detrending and windowing, and reports what it did; `backend=` swaps the engine
-without touching your code.
-
-**[`dsgbr`](https://github.com/openfluids/dsgbr)**: peak detection for noisy
-power spectra that slope over decades, scored against a rolling-median baseline
-instead of a fixed threshold.
-
-**[`chaos-atlas`](https://github.com/openfluids/chaos-atlas/)**: an interactive
-explorer for chaotic systems: strange attractors, bifurcations, fractals and
-coupled-map-lattice patterns, in the browser. ([site](https://openfluids.github.io/chaos-atlas/))
-
-## Optimisation
-
-**`organa`** (soon): adjoint topology
-optimisation for conjugate heat transfer, in parallel with MPI.
-
-## Runs and frames
-
-**[`hpckit`](https://github.com/openfluids/hpckit)**: drives Slurm work from a
-local checkout: one environment per commit, run packets, submission and polling,
-receipts and artifact sync.
-
-**[`quadros`](https://github.com/openfluids/quadros)**: turns simulation
-snapshots into checked frames and videos, locally, over SSH or in a scheduler
-job, with a manifest of what it rendered. Nek5000 built in; other formats
-through PyVista.
-
-## Solvers
-
-**[`dolfinx-rans`](https://github.com/openfluids/dolfinx-rans)**: RANS k-omega and
-k-omega SST turbulence solver for incompressible flow in DOLFINx, validated on
-turbulent channel flow.
-
-## How they fit
-
-`openmodalpy` runs its transforms through `fftkit`, so a backend installed once
-serves both. `hpckit` submits the run and `quadros` renders what comes back;
-they stay separate installs, so a machine that only submits jobs never needs VTK.
-
-## Under development
-
-More is taking shape in the workshop: new solvers, GPU kernels and tools for
-studying how flows behave. They will become public as they mature.
-
-All openfluids software is provided "as is", without warranty of any kind. Each
-repository's LICENSE sets the terms of use.
+- [`hpckit`](https://github.com/openfluids/hpckit): Slurm runs from a local checkout
+- [`quadros`](https://github.com/openfluids/quadros): snapshots to checked frames and videos
