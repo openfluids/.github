@@ -1,6 +1,6 @@
 ![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
 
-**Open tools for fluid flows: state-of-the-art methods and ultra-modern code, for humans and agents.**
+**An open workshop for fluid flows.**
 
 We build numerical tools for the daily work of flow studies: solving flows, analysing their stability and structure, and running the work on clusters. Each tool does one job, is tested against reference results, and is made to be read, reused and combined, by humans and agents alike.
 
