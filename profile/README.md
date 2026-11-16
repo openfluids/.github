@@ -1,6 +1,6 @@
 ![openfluids banner](https://raw.githubusercontent.com/openfluids/.github/main/profile/assets/org-banner-v3.jpg)
 
-**An open workshop for fluid flows: state-of-the-art methods and ultra-modern code.**
+**Open tools for fluid flows: state-of-the-art methods and ultra-modern code, for humans and agents.**
 
 We build numerical tools for the daily work of flow studies: solving flows, analysing their stability and structure, and running the work on clusters. Each tool does one job, is tested against reference results, and is made to be read, reused and combined, by humans and agents alike.
 
@@ -37,7 +37,7 @@ coupled-map-lattice patterns, in the browser. ([site](https://openfluids.github.
 
 ## Optimisation
 
-**[`organa`](https://github.com/openfluids/organa)**: adjoint topology
+**`organa`** (soon): adjoint topology
 optimisation for conjugate heat transfer, in parallel with MPI.
 
 ## Runs and frames
@@ -66,7 +66,7 @@ they stay separate installs, so a machine that only submits jobs never needs VTK
 ## Under development
 
 More is taking shape in the workshop: new solvers, GPU kernels and tools for
-studying how flows behave. They will public as they mature.
+studying how flows behave. They will become public as they mature.
 
 All openfluids software is provided "as is", without warranty of any kind. Each
 repository's LICENSE sets the terms of use.
